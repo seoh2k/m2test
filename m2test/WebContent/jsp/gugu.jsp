@@ -7,6 +7,7 @@
 </head>
 <body>
 	<h1>jsp방식 구구단</h1>
+	<div>하하하</div>
 	<%
 		int dan = Integer.parseInt(request.getParameter("dan")); 
 		// getParameter: 일반 메소드. 문자열 스트링을 매개변수로 받고 문자열로 리턴한다.
