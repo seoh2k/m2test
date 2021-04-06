@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import m2.model2.GuGuService;
+import m2.model2.GuguService;
 
 @WebServlet("/mvc/gugu2")
 public class GuguServlet extends HttpServlet {
@@ -20,8 +20,9 @@ public class GuguServlet extends HttpServlet {
 		System.out.println(dan+" <--dan GuguServlet.doGet()");
 		
 		// 2. 요청 처리 요구
-		GuGuService service = new GuGuService();
-		ArrayList<String> list = service.getGuguDan(dan); // 요청 처리
+		GuguService service = new GuguService();
+		ArrayList<String> list = service.getGugudanList(dan); // 요청 처리
+		System.out.println(list);
 		
 		// 3. 출력을 위임(요청&응답을 포워딩 + 모델값(list))
 		request.setAttribute("list", list); // setAttribute(String, Object)

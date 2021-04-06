@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ page import = "java.util.*" %>
+<%@ page import="java.util.*" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,11 +9,11 @@
 <body>
 <%
 	// Object list = request.getAttribute("list");
-	ArrayList<String> list = (ArrayList<String>) (request.getAttribute("list"));
-	for(String s: list){
+	ArrayList<String> list = (ArrayList<String>)(request.getAttribute("list"));
+	for(String s: list) {
 %>
-		<div><%=s %></div>
-<%
+		<div><%=s%></div>
+<%		
 	}
 %>
 </body>
